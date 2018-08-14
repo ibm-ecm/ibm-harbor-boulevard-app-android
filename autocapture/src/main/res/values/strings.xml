@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AutocaptureSample</string>
+    <string name="action_take_picture">Take Picture</string>
+    <string name="deskew">Deskew</string>
+    <string name="upload">Upload</string>
+    <string name="action_next">NEXT</string>
+    <string name="title_import_image">Choose image to import</string>
+    <string name="title_batch_activity">Batch Pages</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_deskew">Deskew</string>
+</resources>

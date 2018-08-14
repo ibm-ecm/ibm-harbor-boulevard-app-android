@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HarborBoulevard</string>
+    <string name="action_savings_account">Open Savings Account</string>
+    <string name="action_retirement_account">Open Retirement Account</string>
+    <string name="account_college_account">Open College Account</string>
+    <string name="label_loading">Loading</string>
+    <string name="action_fund_with_check">Fund with Check</string>
+    <string name="action_fund_without_check">Fund without Check</string>
+    <string name="label_account_requirements">You will need to provide 3 documents\n- The signed application form\n- Your driving license\n- The check</string>
+    <string name="label_please_scan_the_form">Please scan the form</string>
+    <string name="label_please_scan_the_front">Please scan the front of your driver\'s license</string>
+    <string name="label_please_scan_the_back">Please scan the back of your driver\'s license</string>
+    <string name="thank_you">Thank you</string>
+    <string name="label_documents_received">Your documents have been received. You will receive an email in the next few days, once the application has been reviewed</string>
+    <string name="label_please_scan_the_cheque">Please scan the cheque</string>
+    <string name="action_start">Start</string>
+</resources>

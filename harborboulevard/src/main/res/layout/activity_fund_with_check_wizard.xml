@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/requirements_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/third" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/label_account_requirements"
+            android:textSize="16dp" />
+
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:cpb_colorIndicator="@color/colorAccent"
+            app:cpb_colorIndicatorBackground="@color/cpb_grey"
+            app:cpb_colorProgress="@color/semi_transparent"
+            app:cpb_selectorIdle="@android:color/transparent"
+            app:cpb_textIdle="@string/action_start" />
+    </LinearLayout>
+
+    <com.stepstone.stepper.StepperLayout
+        android:id="@+id/wizard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:ms_backButtonColor="@color/wizard_button_color_selector"
+        app:ms_completeButtonColor="@color/wizard_button_color_selector"
+        app:ms_nextButtonColor="@color/wizard_button_color_selector"
+        app:ms_stepperFeedbackType="content_progress|tabs"
+        app:ms_stepperType="dots" />
+</FrameLayout>
+

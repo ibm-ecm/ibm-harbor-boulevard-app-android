@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/operations_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/divider"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawableTint="?attr/colorPrimary"
+            android:text="@string/action_cancel"
+            android:textColor="?attr/colorPrimary"/>
+
+        <FrameLayout
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cancel_btn"
+            android:layout_alignTop="@+id/cancel_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="?attr/colorPrimary"/>
+
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/divider"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawableTint="?attr/colorPrimary"
+            android:text="@string/action_apply"
+            android:textColor="?attr/colorPrimary"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_below="@id/operations_layout">
+
+        <com.ibm.datacap.sdk.ui.image.DocumentCornerPickerView
+            android:id="@+id/datacap_corner_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            app:dcpv_lineWidth="2dip"
+            app:dcpv_magnifierCrossHairColor="@color/colorPrimary"
+            app:dcpv_maskColor="#CCD3D3D3"/>
+
+
+        <ImageView
+            android:id="@+id/bitmap_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/deskew_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="@string/action_deskew"/>
+
+
+</RelativeLayout>

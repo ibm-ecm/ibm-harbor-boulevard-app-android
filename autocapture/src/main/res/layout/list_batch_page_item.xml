@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:layout_marginBottom="@dimen/small_padding">
+
+    <ImageView
+        android:id="@+id/page_thumbnail"
+        android:layout_width="@dimen/page_thumbnail_size"
+        android:layout_height="@dimen/page_thumbnail_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image"
+        tools:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/page_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toRightOf="@id/page_thumbnail"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="Page name" />
+
+    <TextView
+        android:id="@+id/page_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_name"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/page_thumbnail"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="Page type" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/page_thumbnail"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

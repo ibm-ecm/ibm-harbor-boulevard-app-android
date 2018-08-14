@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:keepScreenOn="true">
+
+    <com.ibm.datacap.sdk.ui.camera.DatacapCameraView
+        android:id="@id/core_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/cameraControls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_controls_layout_height"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/import_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/default_padding"
+            android:layout_marginTop="@dimen/camera_controls_gallery_margin_top"
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/default_padding"
+            android:src="@drawable/ic_galery"/>
+
+        <RelativeLayout
+            android:id="@+id/controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toStartOf="@+id/take_picture_btn">
+
+                <com.futureworkshops.android.autocapture.presentation.common.FlashToggleButton
+                    android:id="@+id/use_flash"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/flash_btn_selector"
+                    android:foreground="?selectableItemBackground"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/take_picture_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_take_picture"/>
+
+            <TextView
+                android:id="@+id/next_btn"
+                style="?android:textAppearanceLargeInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/take_picture_btn"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="@string/action_next"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recent_pictures_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/controls"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/default_padding"
+            android:layout_marginEnd="@dimen/camera_controls_list_margin_end"
+            android:layout_marginTop="@dimen/default_padding"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            tools:listitem="@layout/list_page_image_item"/>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

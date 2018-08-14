@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="camera_controls_layout_height">180dp</dimen>
+    <dimen name="camera_controls_list_margin_bottom">80dp</dimen>
+    <dimen name="camera_controls_next_btn_margin">20dp</dimen>
+    <dimen name="camera_controls_gallery_margin_top">32dp</dimen>
+    <dimen name="camera_controls_list_margin_end">64dp</dimen>
+    <dimen name="camera_controls_progress_size">32dip</dimen>
+    <dimen name="recent_picture_height">88dip</dimen>
+    <dimen name="small_padding">4dip</dimen>
+    <dimen name="page_thumbnail_size">72dip</dimen>
+    <dimen name="divider_height">1px</dimen>
+</resources>

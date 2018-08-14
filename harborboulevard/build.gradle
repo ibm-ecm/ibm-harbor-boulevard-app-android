@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply from: '../android_commons.gradle'
+
+android {
+   
+
+    defaultConfig {
+        applicationId "com.futureworkshops.android.harborboulevard"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':core')
+    
+//    implementation(name: 'IBMDatacapSDK-11.1.0', ext: 'aar')
+    implementation(name: 'IBMDatacapSDK-release', ext: 'aar')
+    
+    implementation(name: 'circular_progress_button', ext: 'aar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:exifinterface:27.1.1'
+    implementation 'com.stepstone.stepper:material-stepper:4.1.0'
+    implementation 'com.google.dagger:dagger:2.11'
+    implementation 'com.google.dagger:dagger-android-support:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.0'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.0'
+}

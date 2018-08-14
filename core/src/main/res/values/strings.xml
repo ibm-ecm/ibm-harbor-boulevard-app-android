@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_ok">OK</string>
+    <string name="permission_camera_rationale">Not granting the camera permission will render the app useless.</string>
+    <string name="permission_storage_rationale">e need access to the external storage in order to import images</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="no_storage_permission">We can not import images because the app does not have permission to read external storage.</string>
+</resources>

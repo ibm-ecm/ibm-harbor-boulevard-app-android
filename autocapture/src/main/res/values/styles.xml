@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="IBMCaptureTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="error_appearance">
+        <item name="android:textColor">@color/textError</item>
+    </style>
+
+    <style name="toggleButton" parent="android:Widget">
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+</resources>

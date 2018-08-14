@@ -1,0 +1,36 @@
+<manifest package="com.futureworkshops.android.harborboulevard"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".HarborBoulevardApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/IBMDatacapTheme">
+
+        <activity
+            android:name=".presentation.splash.SplashscreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.accounts.pick.SelectAccountActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.accounts.open.OpenAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.accounts.create.FundWithCheckWizardActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+</manifest>

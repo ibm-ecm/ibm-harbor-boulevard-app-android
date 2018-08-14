@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:state_flash_auto="true"
+          app:state_flash_on="false"
+          app:state_flash_off="false">
+        <layer-list>
+            <item>
+                <bitmap android:gravity="fill" android:src="@drawable/ic_flash_auto"/>
+            </item>
+        </layer-list>
+    </item>
+
+    <item app:state_flash_auto="false"
+          app:state_flash_on="true"
+          app:state_flash_off="false">
+        <layer-list>
+            <item>
+                <bitmap android:gravity="fill" android:src="@drawable/ic_flash_on"/>
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item app:state_flash_auto="false"
+          app:state_flash_on="false"
+          app:state_flash_off="true">
+        <layer-list>
+            <item>
+                <bitmap android:gravity="fill" android:src="@drawable/ic_flash_off"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>
